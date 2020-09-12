@@ -1,0 +1,10 @@
+<div class="newscontent">
+    <div *ngFor='let news of newslist[0].articles' class="news" (click)="gotoarticles(news.title)">
+        <!-- <p>{{news.author}}</p> -->
+        <img [src]=news.urlToImage class="newsimg">
+        <p class="source">Source:{{news.source.name}}</p>
+        <p>{{news.title}}</p>.
+        <p class="by">by : {{news.author}}</p>
+    </div>
+
+</div>
