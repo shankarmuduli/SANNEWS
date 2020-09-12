@@ -7,10 +7,10 @@ import { HttpClient } from '@angular/common/http';
 export class NewservService {
   currentnews:string;
   constructor(private http:HttpClient) { }
-  getinterNews(country){
+  getinterNews(){
     console.log("newsapp")
-    console.log(this.http.get(`http://newsapi.org/v2/top-headlines?country=in&apiKey=79d4da922c714958acf7143f2bf5540e`))
-    return this.http.get(`http://newsapi.org/v2/top-headlines?country=${country}&apiKey=79d4da922c714958acf7143f2bf5540e`)
+    console.log(this.http.get(`https://gnews.io/api/v3/search?q=example&token=b090f94c7b840277f3d7208b96239a19`))
+    return this.http.get(`https://gnews.io/api/v3/search?q=example&token=b090f94c7b840277f3d7208b96239a19`)
     
   }
   setcurrentnews(title){

@@ -10,8 +10,9 @@ export class NewscontentComponent implements OnInit {
 
   constructor(private news:NewservService,private accroute:ActivatedRoute,private routes:Router) { }
   public newslist=[];
+  
   ngOnInit(): void {
-    this.news.getinterNews("us").subscribe( res => {
+    this.news.getinterNews().subscribe( res => {
       this.newslist.push(res)
     } , error => console.log('user not found'));
     console.log(this.newslist)
