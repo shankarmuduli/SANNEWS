@@ -10,7 +10,8 @@ export class NewscontentComponent implements OnInit {
 
   constructor(private news:NewservService,private accroute:ActivatedRoute,private routes:Router) { }
   public newslist=[];
-  
+  public imagelink="../../assets/noimage.jpg";
+
   ngOnInit(): void {
     this.news.getinterNews().subscribe( res => {
       this.newslist.push(res)

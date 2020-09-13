@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap');
+:root{
+    filter: invert(100%);
+}
+.logo {
+    width: 200px;
+}
+
+.categories {
+    margin-left: 70px;
+    font-family: 'Lemonada', cursive;
+    display: inline;
+    font-weight: 800;
+}
+
+.categorieshead {
+    display: inline;
+    vertical-align: super;
+}
+
